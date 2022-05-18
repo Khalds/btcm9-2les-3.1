@@ -10,6 +10,7 @@ const soldier = {
   soldFire: function () {
     if (this.soldGun.gunPatron <= 0) {
       console.log('Обойма пуста. Перезаредитесь!');
+      this.soldRecharge();
     } else {
       this.soldGun.gunPatron--;
       console.log('бах-бах');
@@ -41,7 +42,6 @@ soldier.soldFire();
 soldier.soldFire();
 soldier.soldFire();
 
-soldier.soldRecharge();
 soldier.soldWound();
 
 console.log(soldier);
